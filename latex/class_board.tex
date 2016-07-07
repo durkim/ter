@@ -1,0 +1,430 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+classe representant le lecteur  
+
+
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+Inheritance diagram for Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_abb3ae1723d9e7a7a21cda3eb785b984a}{start} ()\hypertarget{class_board_abb3ae1723d9e7a7a21cda3eb785b984a}{}\label{class_board_abb3ae1723d9e7a7a21cda3eb785b984a}
+
+\begin{DoxyCompactList}\small\item\em start lance la partie \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a4fa366b8eaa9151e1f16d37da8100f45}{pause} ()\hypertarget{class_board_a4fa366b8eaa9151e1f16d37da8100f45}{}\label{class_board_a4fa366b8eaa9151e1f16d37da8100f45}
+
+\begin{DoxyCompactList}\small\item\em pause met en pause la partie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_a53590f45499231a01a8abbc9a95e396d}{score\+Changed} (int \hyperlink{class_board_a7a44f4be355783a0136e42c79733724a}{score})
+\begin{DoxyCompactList}\small\item\em score\+Changed envoie le score au widget d\textquotesingle{}affichage du score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_a69e3222342a38b98d4d82522921164ba}{key\+Press\+Event} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em key\+Press\+Event gére le mouvement avec les touches du clavier \end{DoxyCompactList}\item 
+int \hyperlink{class_board_af032dd7048b8e3532ffa65889919f23a}{square\+Width} ()
+\begin{DoxyCompactList}\small\item\em square\+Width definit la taille d\textquotesingle{}une case d\textquotesingle{}un polyominos \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a1a4c3c20cfc820ce5b79d7ab01257890}{square\+Height} ()
+\begin{DoxyCompactList}\small\item\em square\+Height definit la taille d\textquotesingle{}une case d\textquotesingle{}un polyominos \end{DoxyCompactList}\item 
+\hyperlink{class_board_ace54d4a0f5ccec30c4c86e676299ccbf}{Board} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board}{Board} constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a1a44a8a95cb3d04207db592f913db009}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event appelle les fonctions motrices du jeu toutes les 1 secondes \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a4fd044f03afc199a0825635d8485f93f}{try\+MoveR} (\hyperlink{class_segment}{Segment} $\ast$segment)
+\begin{DoxyCompactList}\small\item\em try\+MoveR verifie qu\textquotesingle{}un segment à le doit de se déplacer vert la droite \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a58ab26b2c4e2dbc3312a95261b282adf}{try\+MoveL} (\hyperlink{class_segment}{Segment} $\ast$segment)
+\begin{DoxyCompactList}\small\item\em try\+MoveL verifie qu\textquotesingle{}un segment à le doit de se déplacer vert la gauche \end{DoxyCompactList}\item 
+Q\+Size {\bfseries size\+Hint} () const Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{class_board_a3a8c20b7452b2faf9cb9b9062c608113}{}\label{class_board_a3a8c20b7452b2faf9cb9b9062c608113}
+
+\item 
+Q\+Size {\bfseries minimum\+Size\+Hint} () const Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{class_board_a7073de6d1a8c9feeca5ed7d14361c113}{}\label{class_board_a7073de6d1a8c9feeca5ed7d14361c113}
+
+\item 
+void \hyperlink{class_board_af518da96919d04d1f0dbe0794b61d532}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em paint\+Event permet de dessiner les polyominos \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_af4ac464e41d36aeaa587cb03ce6fec34}{try\+Move} (\hyperlink{class_segment}{Segment} $\ast$segment)
+\begin{DoxyCompactList}\small\item\em try\+Move verifie qu\textquotesingle{}un segment à le doit de se déplacer vers le bas \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a1211e4f86b63cdeacb2f7aed16ca650f}{move} (int movement)
+\begin{DoxyCompactList}\small\item\em move effectie le mouvement \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a7c04c8ddb76471bff762229c079c9614}{col\+Gen} (bool f)
+\begin{DoxyCompactList}\small\item\em col\+Gen génère un polyomino en forme de barre de taille aléatoire \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a65c546b6f6c5904306174afcbe55a2bb}{is\+Paused} () const 
+\begin{DoxyCompactList}\small\item\em is\+Paused renvoie true si le jeu est en pause \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_ad811426191e931d672c056339935b602}{is\+Started} () const 
+\begin{DoxyCompactList}\small\item\em is\+Started renvoie true si le jeu à commencer \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a8759b41634150be8a0b7767f59d93acd}{polyo} ()
+\begin{DoxyCompactList}\small\item\em polyo verifie si c\textquotesingle{}est un polyomino \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a9e49166a714ab1f7f5f7ab5035e05784}{update\+Board} (\hyperlink{class_segment}{Segment} $\ast$segment)
+\begin{DoxyCompactList}\small\item\em update\+Board met a jour le board et affichage d\textquotesingle{}informations \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a1884990eae00d36ff465bed7df8ce4fe}{prefix\+Closed} ()
+\begin{DoxyCompactList}\small\item\em prefix\+Closed verifie si le poyomino est bien prefixe close \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_aea9fad5f32155cf8c6b16254e072f6bd}{try\+Rotate} (\hyperlink{class_segment}{Segment} $\ast$segment)
+\begin{DoxyCompactList}\small\item\em try\+Rotate verifie que le segment peut faire une rorarion \end{DoxyCompactList}\item 
+void \hyperlink{class_board_af74f0d4b43e5aa3faea16d7c6407b05e}{clear} ()\hypertarget{class_board_af74f0d4b43e5aa3faea16d7c6407b05e}{}\label{class_board_af74f0d4b43e5aa3faea16d7c6407b05e}
+
+\begin{DoxyCompactList}\small\item\em clear nettoie le board \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_board_a81859b3ab8f00f4c74fd89d0db0ca412}{board\+Height} =25\hypertarget{class_board_a81859b3ab8f00f4c74fd89d0db0ca412}{}\label{class_board_a81859b3ab8f00f4c74fd89d0db0ca412}
+
+\begin{DoxyCompactList}\small\item\em board\+Height taille en hauteur du board \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a3aa771a6eb106b66525123a3d72ab1b7}{board\+Width} =25\hypertarget{class_board_a3aa771a6eb106b66525123a3d72ab1b7}{}\label{class_board_a3aa771a6eb106b66525123a3d72ab1b7}
+
+\begin{DoxyCompactList}\small\item\em board\+Width taille en largeur du board \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a7a44f4be355783a0136e42c79733724a}{score} =0\hypertarget{class_board_a7a44f4be355783a0136e42c79733724a}{}\label{class_board_a7a44f4be355783a0136e42c79733724a}
+
+\begin{DoxyCompactList}\small\item\em score score de la partie \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_afdb871d4bd6f37e1a98564745d762420}{fini} =false\hypertarget{class_board_afdb871d4bd6f37e1a98564745d762420}{}\label{class_board_afdb871d4bd6f37e1a98564745d762420}
+
+\begin{DoxyCompactList}\small\item\em fini definit si une parite est fini \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a424cefa1387e098268b6be64e738ca31}{acc} =0
+\begin{DoxyCompactList}\small\item\em timer timer du widget \end{DoxyCompactList}\item 
+Q\+Basic\+Timer {\bfseries timer}\hypertarget{class_board_a2ff086910f4575f5fdfb1378c56f262f}{}\label{class_board_a2ff086910f4575f5fdfb1378c56f262f}
+
+\item 
+\hyperlink{classmatrix}{matrix} $\ast$ \hyperlink{class_board_aaba5e7fbe2ca37b151abcf08fe5a48cd}{board}\hypertarget{class_board_aaba5e7fbe2ca37b151abcf08fe5a48cd}{}\label{class_board_aaba5e7fbe2ca37b151abcf08fe5a48cd}
+
+\begin{DoxyCompactList}\small\item\em board représente les polyominos sous forme d\textquotesingle{}une matrice de 0 et de 1 \end{DoxyCompactList}\item 
+\hyperlink{class_segment}{Segment} $\ast$ \hyperlink{class_board_a3f7976a204967a943d0c5a464ddad6a3}{cur\+Segment} = N\+U\+LL\hypertarget{class_board_a3f7976a204967a943d0c5a464ddad6a3}{}\label{class_board_a3f7976a204967a943d0c5a464ddad6a3}
+
+\begin{DoxyCompactList}\small\item\em cur\+Segment le segment qui est entrain d\textquotesingle{}être poser \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_segment}{Segment} $>$ \hyperlink{class_board_ace42dd2bb49a49cfa537b218e03b52fd}{segments}\hypertarget{class_board_ace42dd2bb49a49cfa537b218e03b52fd}{}\label{class_board_ace42dd2bb49a49cfa537b218e03b52fd}
+
+\begin{DoxyCompactList}\small\item\em segments liste des segments deja posé \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_aeadc14404bfb8ce40d0ca3736c7db5f6}{paused} = false\hypertarget{class_board_aeadc14404bfb8ce40d0ca3736c7db5f6}{}\label{class_board_aeadc14404bfb8ce40d0ca3736c7db5f6}
+
+\begin{DoxyCompactList}\small\item\em paused definit si la partie est en pause \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a357bd6048217a80d0773c404ddc1dee9}{started} = false\hypertarget{class_board_a357bd6048217a80d0773c404ddc1dee9}{}\label{class_board_a357bd6048217a80d0773c404ddc1dee9}
+
+\begin{DoxyCompactList}\small\item\em started definit si la partie est lancé \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a4accd5b6bccf3ce151e6ffc12fa26552}{segment\+Dropped} = false\hypertarget{class_board_a4accd5b6bccf3ce151e6ffc12fa26552}{}\label{class_board_a4accd5b6bccf3ce151e6ffc12fa26552}
+
+\begin{DoxyCompactList}\small\item\em segment\+Dropped definit si le segment courant a été posé \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant le lecteur 
+
+La classe gere l\textquotesingle{}affichage et le deroulement de la partie 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{\texorpdfstring{Board(\+Q\+Widget $\ast$parent=0)}{Board(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Board\+::\+Board (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_ace54d4a0f5ccec30c4c86e676299ccbf}{}\label{class_board_ace54d4a0f5ccec30c4c86e676299ccbf}
+
+
+\hyperlink{class_board}{Board} constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Board@{Board}!col\+Gen@{col\+Gen}}
+\index{col\+Gen@{col\+Gen}!Board@{Board}}
+\subsubsection[{\texorpdfstring{col\+Gen(bool f)}{colGen(bool f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::col\+Gen (
+\begin{DoxyParamCaption}
+\item[{bool}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a7c04c8ddb76471bff762229c079c9614}{}\label{class_board_a7c04c8ddb76471bff762229c079c9614}
+
+
+col\+Gen génère un polyomino en forme de barre de taille aléatoire 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & sa position verticale ou horizontale \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!is\+Paused@{is\+Paused}}
+\index{is\+Paused@{is\+Paused}!Board@{Board}}
+\subsubsection[{\texorpdfstring{is\+Paused() const }{isPaused() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::is\+Paused (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_board_a65c546b6f6c5904306174afcbe55a2bb}{}\label{class_board_a65c546b6f6c5904306174afcbe55a2bb}
+
+
+is\+Paused renvoie true si le jeu est en pause 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!is\+Started@{is\+Started}}
+\index{is\+Started@{is\+Started}!Board@{Board}}
+\subsubsection[{\texorpdfstring{is\+Started() const }{isStarted() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::is\+Started (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_board_ad811426191e931d672c056339935b602}{}\label{class_board_ad811426191e931d672c056339935b602}
+
+
+is\+Started renvoie true si le jeu à commencer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Board@{Board}}
+\subsubsection[{\texorpdfstring{key\+Press\+Event(\+Q\+Key\+Event $\ast$event)}{keyPressEvent(QKeyEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a69e3222342a38b98d4d82522921164ba}{}\label{class_board_a69e3222342a38b98d4d82522921164ba}
+
+
+key\+Press\+Event gére le mouvement avec les touches du clavier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!move@{move}}
+\index{move@{move}!Board@{Board}}
+\subsubsection[{\texorpdfstring{move(int movement)}{move(int movement)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::move (
+\begin{DoxyParamCaption}
+\item[{int}]{movement}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a1211e4f86b63cdeacb2f7aed16ca650f}{}\label{class_board_a1211e4f86b63cdeacb2f7aed16ca650f}
+
+
+move effectie le mouvement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em movement} & \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Board@{Board}}
+\subsubsection[{\texorpdfstring{paint\+Event(\+Q\+Paint\+Event $\ast$event)}{paintEvent(QPaintEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_af518da96919d04d1f0dbe0794b61d532}{}\label{class_board_af518da96919d04d1f0dbe0794b61d532}
+
+
+paint\+Event permet de dessiner les polyominos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!polyo@{polyo}}
+\index{polyo@{polyo}!Board@{Board}}
+\subsubsection[{\texorpdfstring{polyo()}{polyo()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::polyo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a8759b41634150be8a0b7767f59d93acd}{}\label{class_board_a8759b41634150be8a0b7767f59d93acd}
+
+
+polyo verifie si c\textquotesingle{}est un polyomino 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!prefix\+Closed@{prefix\+Closed}}
+\index{prefix\+Closed@{prefix\+Closed}!Board@{Board}}
+\subsubsection[{\texorpdfstring{prefix\+Closed()}{prefixClosed()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::prefix\+Closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a1884990eae00d36ff465bed7df8ce4fe}{}\label{class_board_a1884990eae00d36ff465bed7df8ce4fe}
+
+
+prefix\+Closed verifie si le poyomino est bien prefixe close 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!score\+Changed@{score\+Changed}}
+\index{score\+Changed@{score\+Changed}!Board@{Board}}
+\subsubsection[{\texorpdfstring{score\+Changed}{scoreChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::score\+Changed (
+\begin{DoxyParamCaption}
+\item[{int}]{score}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\hypertarget{class_board_a53590f45499231a01a8abbc9a95e396d}{}\label{class_board_a53590f45499231a01a8abbc9a95e396d}
+
+
+score\+Changed envoie le score au widget d\textquotesingle{}affichage du score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!square\+Height@{square\+Height}}
+\index{square\+Height@{square\+Height}!Board@{Board}}
+\subsubsection[{\texorpdfstring{square\+Height()}{squareHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::square\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_board_a1a4c3c20cfc820ce5b79d7ab01257890}{}\label{class_board_a1a4c3c20cfc820ce5b79d7ab01257890}
+
+
+square\+Height definit la taille d\textquotesingle{}une case d\textquotesingle{}un polyominos 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!square\+Width@{square\+Width}}
+\index{square\+Width@{square\+Width}!Board@{Board}}
+\subsubsection[{\texorpdfstring{square\+Width()}{squareWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::square\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_board_af032dd7048b8e3532ffa65889919f23a}{}\label{class_board_af032dd7048b8e3532ffa65889919f23a}
+
+
+square\+Width definit la taille d\textquotesingle{}une case d\textquotesingle{}un polyominos 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Board@{Board}}
+\subsubsection[{\texorpdfstring{timer\+Event(\+Q\+Timer\+Event $\ast$event)}{timerEvent(QTimerEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::timer\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Timer\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a1a44a8a95cb3d04207db592f913db009}{}\label{class_board_a1a44a8a95cb3d04207db592f913db009}
+
+
+timer\+Event appelle les fonctions motrices du jeu toutes les 1 secondes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{Board@{Board}!try\+Move@{try\+Move}}
+\index{try\+Move@{try\+Move}!Board@{Board}}
+\subsubsection[{\texorpdfstring{try\+Move(\+Segment $\ast$segment)}{tryMove(Segment *segment)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::try\+Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{segment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_af4ac464e41d36aeaa587cb03ce6fec34}{}\label{class_board_af4ac464e41d36aeaa587cb03ce6fec34}
+
+
+try\+Move verifie qu\textquotesingle{}un segment à le doit de se déplacer vers le bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!try\+MoveL@{try\+MoveL}}
+\index{try\+MoveL@{try\+MoveL}!Board@{Board}}
+\subsubsection[{\texorpdfstring{try\+Move\+L(\+Segment $\ast$segment)}{tryMoveL(Segment *segment)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::try\+MoveL (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{segment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a58ab26b2c4e2dbc3312a95261b282adf}{}\label{class_board_a58ab26b2c4e2dbc3312a95261b282adf}
+
+
+try\+MoveL verifie qu\textquotesingle{}un segment à le doit de se déplacer vert la gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!try\+MoveR@{try\+MoveR}}
+\index{try\+MoveR@{try\+MoveR}!Board@{Board}}
+\subsubsection[{\texorpdfstring{try\+Move\+R(\+Segment $\ast$segment)}{tryMoveR(Segment *segment)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::try\+MoveR (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{segment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a4fd044f03afc199a0825635d8485f93f}{}\label{class_board_a4fd044f03afc199a0825635d8485f93f}
+
+
+try\+MoveR verifie qu\textquotesingle{}un segment à le doit de se déplacer vert la droite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!try\+Rotate@{try\+Rotate}}
+\index{try\+Rotate@{try\+Rotate}!Board@{Board}}
+\subsubsection[{\texorpdfstring{try\+Rotate(\+Segment $\ast$segment)}{tryRotate(Segment *segment)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::try\+Rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{segment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_aea9fad5f32155cf8c6b16254e072f6bd}{}\label{class_board_aea9fad5f32155cf8c6b16254e072f6bd}
+
+
+try\+Rotate verifie que le segment peut faire une rorarion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board@{Board}!update\+Board@{update\+Board}}
+\index{update\+Board@{update\+Board}!Board@{Board}}
+\subsubsection[{\texorpdfstring{update\+Board(\+Segment $\ast$segment)}{updateBoard(Segment *segment)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::update\+Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{segment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a9e49166a714ab1f7f5f7ab5035e05784}{}\label{class_board_a9e49166a714ab1f7f5f7ab5035e05784}
+
+
+update\+Board met a jour le board et affichage d\textquotesingle{}informations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Board@{Board}!acc@{acc}}
+\index{acc@{acc}!Board@{Board}}
+\subsubsection[{\texorpdfstring{acc}{acc}}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::acc =0}\hypertarget{class_board_a424cefa1387e098268b6be64e738ca31}{}\label{class_board_a424cefa1387e098268b6be64e738ca31}
+
+
+timer timer du widget 
+
+acc compte le nombre de piece posé 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{board_8h}{board.\+h}\item 
+\hyperlink{board_8cpp}{board.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\hypertarget{class_segment}{}\section{Segment Class Reference}
+\label{class_segment}\index{Segment@{Segment}}
+
+
+The \hyperlink{class_segment}{Segment} class Représente un liste d\textquotesingle{}unicell.  
+
+
+
+
+{\ttfamily \#include $<$segment.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_segment_a8251e7e03f8fb4a65a35f1c7a1c6e806}{Segment} (int x, int y, int area, bool f)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_segment}{Segment} constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_segment_ad3d691fcf0dd3e1c6478274589cfb425}{draw} (Q\+Painter \&painter, int x, int y, int sh, int sw)
+\begin{DoxyCompactList}\small\item\em draw dessine une par une les unitcells \end{DoxyCompactList}\item 
+void \hyperlink{class_segment_afac9424a18e0e264208d754cc3a1439a}{rotate} ()\hypertarget{class_segment_afac9424a18e0e264208d754cc3a1439a}{}\label{class_segment_afac9424a18e0e264208d754cc3a1439a}
+
+\begin{DoxyCompactList}\small\item\em rotate permet la rotation d\textquotesingle{}un segment à 90dégrès \end{DoxyCompactList}\item 
+\hyperlink{class_unit_cell}{Unit\+Cell} $\ast$ \hyperlink{class_segment_a4c02741758eaae91a7e5fe04ea33aa17}{get\+Unit\+Cell} (int index)
+\begin{DoxyCompactList}\small\item\em get\+Unit\+Cell renvoie l\textquotesingle{}unitcell à l\textquotesingle{}index indiqué \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_unit_cell}{Unit\+Cell} $>$ $\ast$ \hyperlink{class_segment_a65060dd0d9d490054056869caea68a44}{get\+Cells} ()
+\begin{DoxyCompactList}\small\item\em get\+Cells renvoie toutes les unitcells \end{DoxyCompactList}\item 
+int \hyperlink{class_segment_a96c4597d9f2265ca8a11604562627888}{get\+Size} () const 
+\begin{DoxyCompactList}\small\item\em get\+Size renvoie la taille \end{DoxyCompactList}\item 
+bool \hyperlink{class_segment_a85de0a9a7b0e1bb9e7397b147a19f959}{is\+Down} ()
+\begin{DoxyCompactList}\small\item\em is\+Down verifie sur le segment est placé \end{DoxyCompactList}\item 
+bool \hyperlink{class_segment_af810a0fcfc2a5e412237777433906eba}{neighbor} (\hyperlink{class_segment}{Segment} $\ast$other)
+\begin{DoxyCompactList}\small\item\em neighbor \end{DoxyCompactList}\item 
+void \hyperlink{class_segment_ab51341d5b76009abb2ac69f870fb2633}{reset} (int x)
+\begin{DoxyCompactList}\small\item\em reset verifie si 2 segments sont voisin \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_unit_cell}{Unit\+Cell} $>$ \hyperlink{class_segment_a931b5815778e37b4906f9c079432c5db}{cells}\hypertarget{class_segment_a931b5815778e37b4906f9c079432c5db}{}\label{class_segment_a931b5815778e37b4906f9c079432c5db}
+
+\begin{DoxyCompactList}\small\item\em cells toutes les \hyperlink{class_unit_cell}{Unit\+Cell} qui constitue le segment \end{DoxyCompactList}\item 
+bool \hyperlink{class_segment_a64effb3c704066934c7bfb3d5f76dead}{verticale}\hypertarget{class_segment_a64effb3c704066934c7bfb3d5f76dead}{}\label{class_segment_a64effb3c704066934c7bfb3d5f76dead}
+
+\begin{DoxyCompactList}\small\item\em verticale true si horizontale \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_segment_ae17457fa5c481d65fa0bd6363069e144}{color}\hypertarget{class_segment_ae17457fa5c481d65fa0bd6363069e144}{}\label{class_segment_ae17457fa5c481d65fa0bd6363069e144}
+
+\begin{DoxyCompactList}\small\item\em color couleur du segment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_segment}{Segment} class Représente un liste d\textquotesingle{}unicell. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Segment@{Segment}!Segment@{Segment}}
+\index{Segment@{Segment}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{Segment(int x, int y, int area, bool f)}{Segment(int x, int y, int area, bool f)}}]{\setlength{\rightskip}{0pt plus 5cm}Segment\+::\+Segment (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{area, }
+\item[{bool}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{class_segment_a8251e7e03f8fb4a65a35f1c7a1c6e806}{}\label{class_segment_a8251e7e03f8fb4a65a35f1c7a1c6e806}
+
+
+\hyperlink{class_segment}{Segment} constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonée de départ du segment \\
+\hline
+{\em y} & coordonée de départ du segment \\
+\hline
+{\em area} & sa taille \\
+\hline
+{\em f} & sa position true si horizontale \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Segment@{Segment}!draw@{draw}}
+\index{draw@{draw}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{draw(\+Q\+Painter \&painter, int x, int y, int sh, int sw)}{draw(QPainter &painter, int x, int y, int sh, int sw)}}]{\setlength{\rightskip}{0pt plus 5cm}void Segment\+::draw (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter \&}]{painter, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{sh, }
+\item[{int}]{sw}
+\end{DoxyParamCaption}
+)}\hypertarget{class_segment_ad3d691fcf0dd3e1c6478274589cfb425}{}\label{class_segment_ad3d691fcf0dd3e1c6478274589cfb425}
+
+
+draw dessine une par une les unitcells 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em sh} & \\
+\hline
+{\em sw} & \\
+\hline
+\end{DoxyParams}
+\index{Segment@{Segment}!get\+Cells@{get\+Cells}}
+\index{get\+Cells@{get\+Cells}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{get\+Cells()}{getCells()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Unit\+Cell}$>$$\ast$ Segment\+::get\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_segment_a65060dd0d9d490054056869caea68a44}{}\label{class_segment_a65060dd0d9d490054056869caea68a44}
+
+
+get\+Cells renvoie toutes les unitcells 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Segment@{Segment}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{get\+Size() const }{getSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Segment\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_segment_a96c4597d9f2265ca8a11604562627888}{}\label{class_segment_a96c4597d9f2265ca8a11604562627888}
+
+
+get\+Size renvoie la taille 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Segment@{Segment}!get\+Unit\+Cell@{get\+Unit\+Cell}}
+\index{get\+Unit\+Cell@{get\+Unit\+Cell}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{get\+Unit\+Cell(int index)}{getUnitCell(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Unit\+Cell}$\ast$ Segment\+::get\+Unit\+Cell (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_segment_a4c02741758eaae91a7e5fe04ea33aa17}{}\label{class_segment_a4c02741758eaae91a7e5fe04ea33aa17}
+
+
+get\+Unit\+Cell renvoie l\textquotesingle{}unitcell à l\textquotesingle{}index indiqué 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Segment@{Segment}!is\+Down@{is\+Down}}
+\index{is\+Down@{is\+Down}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{is\+Down()}{isDown()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Segment\+::is\+Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_segment_a85de0a9a7b0e1bb9e7397b147a19f959}{}\label{class_segment_a85de0a9a7b0e1bb9e7397b147a19f959}
+
+
+is\+Down verifie sur le segment est placé 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Segment@{Segment}!neighbor@{neighbor}}
+\index{neighbor@{neighbor}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{neighbor(\+Segment $\ast$other)}{neighbor(Segment *other)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Segment\+::neighbor (
+\begin{DoxyParamCaption}
+\item[{{\bf Segment} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_segment_af810a0fcfc2a5e412237777433906eba}{}\label{class_segment_af810a0fcfc2a5e412237777433906eba}
+
+
+neighbor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Segment@{Segment}!reset@{reset}}
+\index{reset@{reset}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{reset(int x)}{reset(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Segment\+::reset (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_segment_ab51341d5b76009abb2ac69f870fb2633}{}\label{class_segment_ab51341d5b76009abb2ac69f870fb2633}
+
+
+reset verifie si 2 segments sont voisin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & reset remet un segment à ses coordonées d\textquotesingle{}origine \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{segment_8h}{segment.\+h}\item 
+\hyperlink{segment_8cpp}{segment.\+cpp}\end{DoxyCompactItemize}

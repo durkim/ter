@@ -1,0 +1,260 @@
+\hypertarget{classmatrix}{}\section{matrix Class Reference}
+\label{classmatrix}\index{matrix@{matrix}}
+
+
+The matrix class une matrice constituer de vecteur de vecteur.  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmatrix_ac060122c49720709c23dd7e4e630eaff}{matrix} (int i, int j)
+\begin{DoxyCompactList}\small\item\em matrix contrucreur matrice 2 d \end{DoxyCompactList}\item 
+\hyperlink{classmatrix_afe22b82beac968bb2069201000e9b4bf}{matrix} (\hyperlink{classmatrix}{matrix} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em matrix constructeur par copie \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_ab298b1344f474debfabd2db0e31e84c9}{set} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set met un 1 à la case de la matrice\{x\mbox{]}\mbox{[}y\mbox{]} \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_ab039eefe55f3e60da940243505d20800}{afficher} ()\hypertarget{classmatrix_ab039eefe55f3e60da940243505d20800}{}\label{classmatrix_ab039eefe55f3e60da940243505d20800}
+
+\begin{DoxyCompactList}\small\item\em afficher affiche la matrice \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_a9b1fbe36a149d15a05cf43b1a2c01ee5}{resize\+Droite} ()\hypertarget{classmatrix_a9b1fbe36a149d15a05cf43b1a2c01ee5}{}\label{classmatrix_a9b1fbe36a149d15a05cf43b1a2c01ee5}
+
+\begin{DoxyCompactList}\small\item\em resize\+Droite ajoute un vecteur remplie de 0 de taile size\+Row à droite \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_a20b826143f701edefd8eacb92e44c7a6}{resize\+Gauche} ()\hypertarget{classmatrix_a20b826143f701edefd8eacb92e44c7a6}{}\label{classmatrix_a20b826143f701edefd8eacb92e44c7a6}
+
+\begin{DoxyCompactList}\small\item\em resize\+Gauche ajoute un vecteur remplie de 0 de taile size\+Row à gauche \end{DoxyCompactList}\item 
+bool \hyperlink{classmatrix_ab803b319d6488ae03985740b6437222f}{occuped} (int x, int y)
+\begin{DoxyCompactList}\small\item\em occuped verifie si l\textquotesingle{}emplacement de la matrice\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} est occupé \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_a041925ba18b2fb25d350d0f6786d8a2a}{matrix\+To\+List} ()\hypertarget{classmatrix_a041925ba18b2fb25d350d0f6786d8a2a}{}\label{classmatrix_a041925ba18b2fb25d350d0f6786d8a2a}
+
+\begin{DoxyCompactList}\small\item\em matrix\+To\+List convertie la matrice en afficga en liste de segment plein \end{DoxyCompactList}\item 
+bool \hyperlink{classmatrix_ad1222d5c3689e27c2acd88fa1100b830}{vec\+Null} (vector$<$ int $>$ v)
+\begin{DoxyCompactList}\small\item\em vec\+Null verifie si le vecteur v est remplie de 0 \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classmatrix_a83ac048f17c6031c31fd67242e37edc7}{vecteur\+To\+List} (vector$<$ int $>$ v)
+\begin{DoxyCompactList}\small\item\em vecteur\+To\+List convertie un vecteir en un liste qui représente les segments pleins \end{DoxyCompactList}\item 
+int \hyperlink{classmatrix_aa26916f337f663161fa8d1022919d41d}{calcul\+Offset} (vector$<$ int $>$ v1, vector$<$ int $>$ v2)
+\begin{DoxyCompactList}\small\item\em calcul\+Offset calcule la différence de déplacement a faire entre v1 et v2 \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_a56dd8532b44f9aed61b1f3b745d05a84}{printlist} ()\hypertarget{classmatrix_a56dd8532b44f9aed61b1f3b745d05a84}{}\label{classmatrix_a56dd8532b44f9aed61b1f3b745d05a84}
+
+\begin{DoxyCompactList}\small\item\em printlist affiche la liste \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_ab7e0ecebed1613e34a3cd81a3c5ad8b4}{propagation} (vector$<$ int $>$ $\ast$v, int i)
+\begin{DoxyCompactList}\small\item\em propagation élimine les 1 consécutif dans les 2 sens du vecteur à l\textquotesingle{}indice i \end{DoxyCompactList}\item 
+void \hyperlink{classmatrix_aba69eb1058b43b8690014fcbdf1764a6}{draw} (Q\+Painter \&painter, int x, int y, int sh, int sw)
+\begin{DoxyCompactList}\small\item\em draw dessine le polyomino à partir de la matrice \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmatrix_accbce5e857edcccbc46f704db8d390a2}{size\+Row}\hypertarget{classmatrix_accbce5e857edcccbc46f704db8d390a2}{}\label{classmatrix_accbce5e857edcccbc46f704db8d390a2}
+
+\begin{DoxyCompactList}\small\item\em size\+Row taille ligne \end{DoxyCompactList}\item 
+int \hyperlink{classmatrix_a502f7b1bbd4aca8f56b562892aa7f550}{size\+Col}\hypertarget{classmatrix_a502f7b1bbd4aca8f56b562892aa7f550}{}\label{classmatrix_a502f7b1bbd4aca8f56b562892aa7f550}
+
+\begin{DoxyCompactList}\small\item\em size\+Col taille colone \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{classmatrix_a54bc336decc92a43de11b1b712af4e6a}{vec}\hypertarget{classmatrix_a54bc336decc92a43de11b1b712af4e6a}{}\label{classmatrix_a54bc336decc92a43de11b1b712af4e6a}
+
+\begin{DoxyCompactList}\small\item\em vec l\textquotesingle{}architecture de la matrice \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{classmatrix_a8a0bb1e77b1064c20a53aa51dea340a0}{l}\hypertarget{classmatrix_a8a0bb1e77b1064c20a53aa51dea340a0}{}\label{classmatrix_a8a0bb1e77b1064c20a53aa51dea340a0}
+
+\begin{DoxyCompactList}\small\item\em l représente le polyomino sous forme de liste \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The matrix class une matrice constituer de vecteur de vecteur. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{matrix(int i, int j)}{matrix(int i, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}matrix\+::matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_ac060122c49720709c23dd7e4e630eaff}{}\label{classmatrix_ac060122c49720709c23dd7e4e630eaff}
+
+
+matrix contrucreur matrice 2 d 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & ligne \\
+\hline
+{\em j} & colone \\
+\hline
+\end{DoxyParams}
+\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{matrix(matrix $\ast$obj)}{matrix(matrix *obj)}}]{\setlength{\rightskip}{0pt plus 5cm}matrix\+::matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_afe22b82beac968bb2069201000e9b4bf}{}\label{classmatrix_afe22b82beac968bb2069201000e9b4bf}
+
+
+matrix constructeur par copie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{matrix@{matrix}!calcul\+Offset@{calcul\+Offset}}
+\index{calcul\+Offset@{calcul\+Offset}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{calcul\+Offset(vector$<$ int $>$ v1, vector$<$ int $>$ v2)}{calculOffset(vector< int > v1, vector< int > v2)}}]{\setlength{\rightskip}{0pt plus 5cm}int matrix\+::calcul\+Offset (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{v1, }
+\item[{vector$<$ int $>$}]{v2}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_aa26916f337f663161fa8d1022919d41d}{}\label{classmatrix_aa26916f337f663161fa8d1022919d41d}
+
+
+calcul\+Offset calcule la différence de déplacement a faire entre v1 et v2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{matrix@{matrix}!draw@{draw}}
+\index{draw@{draw}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{draw(\+Q\+Painter \&painter, int x, int y, int sh, int sw)}{draw(QPainter &painter, int x, int y, int sh, int sw)}}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\+::draw (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter \&}]{painter, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{sh, }
+\item[{int}]{sw}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_aba69eb1058b43b8690014fcbdf1764a6}{}\label{classmatrix_aba69eb1058b43b8690014fcbdf1764a6}
+
+
+draw dessine le polyomino à partir de la matrice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em sh} & \\
+\hline
+{\em sw} & \\
+\hline
+\end{DoxyParams}
+\index{matrix@{matrix}!occuped@{occuped}}
+\index{occuped@{occuped}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{occuped(int x, int y)}{occuped(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}bool matrix\+::occuped (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_ab803b319d6488ae03985740b6437222f}{}\label{classmatrix_ab803b319d6488ae03985740b6437222f}
+
+
+occuped verifie si l\textquotesingle{}emplacement de la matrice\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} est occupé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{matrix@{matrix}!propagation@{propagation}}
+\index{propagation@{propagation}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{propagation(vector$<$ int $>$ $\ast$v, int i)}{propagation(vector< int > *v, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\+::propagation (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ $\ast$}]{v, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_ab7e0ecebed1613e34a3cd81a3c5ad8b4}{}\label{classmatrix_ab7e0ecebed1613e34a3cd81a3c5ad8b4}
+
+
+propagation élimine les 1 consécutif dans les 2 sens du vecteur à l\textquotesingle{}indice i 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\index{matrix@{matrix}!set@{set}}
+\index{set@{set}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{set(int x, int y)}{set(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_ab298b1344f474debfabd2db0e31e84c9}{}\label{classmatrix_ab298b1344f474debfabd2db0e31e84c9}
+
+
+set met un 1 à la case de la matrice\{x\mbox{]}\mbox{[}y\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\index{matrix@{matrix}!vec\+Null@{vec\+Null}}
+\index{vec\+Null@{vec\+Null}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{vec\+Null(vector$<$ int $>$ v)}{vecNull(vector< int > v)}}]{\setlength{\rightskip}{0pt plus 5cm}bool matrix\+::vec\+Null (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_ad1222d5c3689e27c2acd88fa1100b830}{}\label{classmatrix_ad1222d5c3689e27c2acd88fa1100b830}
+
+
+vec\+Null verifie si le vecteur v est remplie de 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{matrix@{matrix}!vecteur\+To\+List@{vecteur\+To\+List}}
+\index{vecteur\+To\+List@{vecteur\+To\+List}!matrix@{matrix}}
+\subsubsection[{\texorpdfstring{vecteur\+To\+List(vector$<$ int $>$ v)}{vecteurToList(vector< int > v)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ matrix\+::vecteur\+To\+List (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classmatrix_a83ac048f17c6031c31fd67242e37edc7}{}\label{classmatrix_a83ac048f17c6031c31fd67242e37edc7}
+
+
+vecteur\+To\+List convertie un vecteir en un liste qui représente les segments pleins 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{matrix_8h}{matrix.\+h}\item 
+\hyperlink{matrix_8cpp}{matrix.\+cpp}\end{DoxyCompactItemize}

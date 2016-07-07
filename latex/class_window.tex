@@ -1,0 +1,74 @@
+\hypertarget{class_window}{}\section{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+
+
+The \hyperlink{class_window}{Window} class contient tous les widgets de l\textquotesingle{}application.  
+
+
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+Inheritance diagram for Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_window_a5cddf5e150455180e95f8419a52dd380}{switch\+Start\+Restart\+Btn} ()\hypertarget{class_window_a5cddf5e150455180e95f8419a52dd380}{}\label{class_window_a5cddf5e150455180e95f8419a52dd380}
+
+\begin{DoxyCompactList}\small\item\em switch\+Start\+Restart\+Btn permet de lier le bouton start de l\textquotesingle{}apply et la fonction board\+::start(). \end{DoxyCompactList}\item 
+void \hyperlink{class_window_ad57b8f4814d9dba8bb23d60ca256f328}{switch\+Pause\+Play\+Btn} ()\hypertarget{class_window_ad57b8f4814d9dba8bb23d60ca256f328}{}\label{class_window_ad57b8f4814d9dba8bb23d60ca256f328}
+
+\begin{DoxyCompactList}\small\item\em switch\+Pause\+Play\+Btn permet de lier le bouton start de l\textquotesingle{}apply et la fonction board\+::pause(). \end{DoxyCompactList}\item 
+void {\bfseries switchB} ()\hypertarget{class_window_a5d60708e4577aff4fa1c932971963b06}{}\label{class_window_a5d60708e4577aff4fa1c932971963b06}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window} ()\hypertarget{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{}\label{class_window_a74e6087da23d3c24e9fac0245e5ec92c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window}{Window} constructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_window_a906c0c4c45bc154db38b36550596aeb2}{boardT}\hypertarget{class_window_a906c0c4c45bc154db38b36550596aeb2}{}\label{class_window_a906c0c4c45bc154db38b36550596aeb2}
+
+\begin{DoxyCompactList}\small\item\em board le widget ou l\textquotesingle{}on dessine \end{DoxyCompactList}\item 
+\hyperlink{class_board2}{Board2} $\ast$ \hyperlink{class_window_aa11d094243940ed58d7ac5506efe2707}{boardV}\hypertarget{class_window_aa11d094243940ed58d7ac5506efe2707}{}\label{class_window_aa11d094243940ed58d7ac5506efe2707}
+
+\begin{DoxyCompactList}\small\item\em board2 \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_window_a5f4fdd6881f2b071bad324bc0e01ab36}{label}\hypertarget{class_window_a5f4fdd6881f2b071bad324bc0e01ab36}{}\label{class_window_a5f4fdd6881f2b071bad324bc0e01ab36}
+
+\begin{DoxyCompactList}\small\item\em label nom de widget \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_a3005a3efaf6600a44b879b7d0f36fecd}{start\+Btn}\hypertarget{class_window_a3005a3efaf6600a44b879b7d0f36fecd}{}\label{class_window_a3005a3efaf6600a44b879b7d0f36fecd}
+
+\begin{DoxyCompactList}\small\item\em start\+Btn bouton start \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_a874073f85555346739380a5c21892553}{pause\+Btn}\hypertarget{class_window_a874073f85555346739380a5c21892553}{}\label{class_window_a874073f85555346739380a5c21892553}
+
+\begin{DoxyCompactList}\small\item\em pause\+Btn bouton pause \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_a2b98fdaee75065f48ce1694cb42a616a}{quit\+Btn}\hypertarget{class_window_a2b98fdaee75065f48ce1694cb42a616a}{}\label{class_window_a2b98fdaee75065f48ce1694cb42a616a}
+
+\begin{DoxyCompactList}\small\item\em quit\+Btn bouton quit \end{DoxyCompactList}\item 
+Q\+L\+C\+D\+Number $\ast$ \hyperlink{class_window_a35b1d4ab7d60ceff7daa5d817314226c}{surface\+Lcd}\hypertarget{class_window_a35b1d4ab7d60ceff7daa5d817314226c}{}\label{class_window_a35b1d4ab7d60ceff7daa5d817314226c}
+
+\begin{DoxyCompactList}\small\item\em surface\+Lcd affichage du score \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_af958997387b1124f1bf2b47b7230db74}{switch\+Btn}\hypertarget{class_window_af958997387b1124f1bf2b47b7230db74}{}\label{class_window_af958997387b1124f1bf2b47b7230db74}
+
+\begin{DoxyCompactList}\small\item\em switch\+Btn switch pour passer en mode visualisation de polyominos \end{DoxyCompactList}\item 
+bool {\bfseries switch\+Visu} =false\hypertarget{class_window_aeb85a2399e59772014289c10440d401a}{}\label{class_window_aeb85a2399e59772014289c10440d401a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_window}{Window} class contient tous les widgets de l\textquotesingle{}application. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{window_8h}{window.\+h}\item 
+\hyperlink{window_8cpp}{window.\+cpp}\end{DoxyCompactItemize}

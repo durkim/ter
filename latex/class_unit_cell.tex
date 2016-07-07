@@ -1,0 +1,160 @@
+\hypertarget{class_unit_cell}{}\section{Unit\+Cell Class Reference}
+\label{class_unit_cell}\index{Unit\+Cell@{Unit\+Cell}}
+
+
+The \hyperlink{class_unit_cell}{Unit\+Cell} class contient la taille ,la couleur,et les coordonées d\textquotesingle{}une celluled\textquotesingle{}un polyomino.  
+
+
+
+
+{\ttfamily \#include $<$unitcell.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_unit_cell_a5dbf3b36af02e1ea1957c93b79ba8099}{Unit\+Cell} (int \hyperlink{class_unit_cell_aae64c4e864e786746eba53443f946d69}{x}, int \hyperlink{class_unit_cell_a9fdd4a78e21c23d47e535ed2510002ad}{y}, Q\+Color \hyperlink{class_unit_cell_a6e7907cda650addf06f7f06c690180de}{color})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_unit_cell}{Unit\+Cell} constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_unit_cell_a903afaf6948b87afd78cc971674b60cd}{draw} (Q\+Painter \&painter, int \hyperlink{class_unit_cell_aae64c4e864e786746eba53443f946d69}{x}, int \hyperlink{class_unit_cell_a9fdd4a78e21c23d47e535ed2510002ad}{y}, int sh, int sw)
+\begin{DoxyCompactList}\small\item\em draw dessine une cellule de polyomino \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_unit_cell_a30d1461d8760fb72d87f683811df0d4e}{set\+Size} (int \hyperlink{class_unit_cell_ab90b8bcef203bb8a7341bf2b11aa48ac}{h}, int \hyperlink{class_unit_cell_a36cb2e967f43f4e71ded533752a92a1c}{w})
+\begin{DoxyCompactList}\small\item\em set\+Size change la hauteur et la largeur \end{DoxyCompactList}\item 
+static int \hyperlink{class_unit_cell_af42b23a4f6689ee4bfcdc43454ea2a4e}{get\+Height} ()
+\begin{DoxyCompactList}\small\item\em get\+Height accesseur de la hauteur \end{DoxyCompactList}\item 
+static int \hyperlink{class_unit_cell_a151f78bd5616f3e554c3e19077b96fb7}{get\+Width} ()
+\begin{DoxyCompactList}\small\item\em get\+Width accesseur de la largeur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_unit_cell_aae64c4e864e786746eba53443f946d69}{x} = 0\hypertarget{class_unit_cell_aae64c4e864e786746eba53443f946d69}{}\label{class_unit_cell_aae64c4e864e786746eba53443f946d69}
+
+\begin{DoxyCompactList}\small\item\em x coordonés abscisse \end{DoxyCompactList}\item 
+int \hyperlink{class_unit_cell_a9fdd4a78e21c23d47e535ed2510002ad}{y} = 0\hypertarget{class_unit_cell_a9fdd4a78e21c23d47e535ed2510002ad}{}\label{class_unit_cell_a9fdd4a78e21c23d47e535ed2510002ad}
+
+\begin{DoxyCompactList}\small\item\em y coordonés ordonné \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_unit_cell_a6e7907cda650addf06f7f06c690180de}{color}\hypertarget{class_unit_cell_a6e7907cda650addf06f7f06c690180de}{}\label{class_unit_cell_a6e7907cda650addf06f7f06c690180de}
+
+\begin{DoxyCompactList}\small\item\em color couleur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_unit_cell_ab90b8bcef203bb8a7341bf2b11aa48ac}{h} = 0\hypertarget{class_unit_cell_ab90b8bcef203bb8a7341bf2b11aa48ac}{}\label{class_unit_cell_ab90b8bcef203bb8a7341bf2b11aa48ac}
+
+\begin{DoxyCompactList}\small\item\em h sa hauteur \end{DoxyCompactList}\item 
+static int \hyperlink{class_unit_cell_a36cb2e967f43f4e71ded533752a92a1c}{w} = 0\hypertarget{class_unit_cell_a36cb2e967f43f4e71ded533752a92a1c}{}\label{class_unit_cell_a36cb2e967f43f4e71ded533752a92a1c}
+
+\begin{DoxyCompactList}\small\item\em w sa largeur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_unit_cell}{Unit\+Cell} class contient la taille ,la couleur,et les coordonées d\textquotesingle{}une celluled\textquotesingle{}un polyomino. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Unit\+Cell@{Unit\+Cell}!Unit\+Cell@{Unit\+Cell}}
+\index{Unit\+Cell@{Unit\+Cell}!Unit\+Cell@{Unit\+Cell}}
+\subsubsection[{\texorpdfstring{Unit\+Cell(int x, int y, Q\+Color color)}{UnitCell(int x, int y, QColor color)}}]{\setlength{\rightskip}{0pt plus 5cm}Unit\+Cell\+::\+Unit\+Cell (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{Q\+Color}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{class_unit_cell_a5dbf3b36af02e1ea1957c93b79ba8099}{}\label{class_unit_cell_a5dbf3b36af02e1ea1957c93b79ba8099}
+
+
+\hyperlink{class_unit_cell}{Unit\+Cell} constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Unit\+Cell@{Unit\+Cell}!draw@{draw}}
+\index{draw@{draw}!Unit\+Cell@{Unit\+Cell}}
+\subsubsection[{\texorpdfstring{draw(\+Q\+Painter \&painter, int x, int y, int sh, int sw)}{draw(QPainter &painter, int x, int y, int sh, int sw)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+Cell\+::draw (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter \&}]{painter, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{sh, }
+\item[{int}]{sw}
+\end{DoxyParamCaption}
+)}\hypertarget{class_unit_cell_a903afaf6948b87afd78cc971674b60cd}{}\label{class_unit_cell_a903afaf6948b87afd78cc971674b60cd}
+
+
+draw dessine une cellule de polyomino 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em sh} & \\
+\hline
+{\em sw} & \\
+\hline
+\end{DoxyParams}
+\index{Unit\+Cell@{Unit\+Cell}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Unit\+Cell@{Unit\+Cell}}
+\subsubsection[{\texorpdfstring{get\+Height()}{getHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Unit\+Cell\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_unit_cell_af42b23a4f6689ee4bfcdc43454ea2a4e}{}\label{class_unit_cell_af42b23a4f6689ee4bfcdc43454ea2a4e}
+
+
+get\+Height accesseur de la hauteur 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Unit\+Cell@{Unit\+Cell}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Unit\+Cell@{Unit\+Cell}}
+\subsubsection[{\texorpdfstring{get\+Width()}{getWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int Unit\+Cell\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_unit_cell_a151f78bd5616f3e554c3e19077b96fb7}{}\label{class_unit_cell_a151f78bd5616f3e554c3e19077b96fb7}
+
+
+get\+Width accesseur de la largeur 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Unit\+Cell@{Unit\+Cell}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Unit\+Cell@{Unit\+Cell}}
+\subsubsection[{\texorpdfstring{set\+Size(int h, int w)}{setSize(int h, int w)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+Cell\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{int}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_unit_cell_a30d1461d8760fb72d87f683811df0d4e}{}\label{class_unit_cell_a30d1461d8760fb72d87f683811df0d4e}
+
+
+set\+Size change la hauteur et la largeur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em w} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{unitcell_8h}{unitcell.\+h}\item 
+\hyperlink{unitcell_8cpp}{unitcell.\+cpp}\end{DoxyCompactItemize}

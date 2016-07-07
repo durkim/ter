@@ -1,0 +1,143 @@
+\hypertarget{class_board2}{}\section{Board2 Class Reference}
+\label{class_board2}\index{Board2@{Board2}}
+
+
+The \hyperlink{class_board2}{Board2} class dessine un polyomino à partir d\textquotesingle{}une liste de segments.  
+
+
+
+
+{\ttfamily \#include $<$board2.\+h$>$}
+
+Inheritance diagram for Board2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board2}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries start} ()\hypertarget{class_board2_ab7dff7e5274b356a9e6fcf86504d83ff}{}\label{class_board2_ab7dff7e5274b356a9e6fcf86504d83ff}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board2_aae64d4a675128c16c00d07149c1a4ee3}{Board2} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board2}{Board2} constructeur. \end{DoxyCompactList}\item 
+int {\bfseries square\+Width} ()\hypertarget{class_board2_a427244655bbee1815563d39858dc0fa3}{}\label{class_board2_a427244655bbee1815563d39858dc0fa3}
+
+\item 
+int {\bfseries square\+Height} ()\hypertarget{class_board2_a7c2b21739e7afcd6442b1d9e4c822ad5}{}\label{class_board2_a7c2b21739e7afcd6442b1d9e4c822ad5}
+
+\item 
+void \hyperlink{class_board2_af4b54598413c7146ae1281ffb0da1002}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event achange de polyomino toutes les 1 secondes \end{DoxyCompactList}\item 
+void \hyperlink{class_board2_a5457e120d690a6706c1e9f2949777721}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em paint\+Event dessine le polyiomino \end{DoxyCompactList}\item 
+void \hyperlink{class_board2_ab02675377010f5f137a5d34f013ffc42}{lecture} ()\hypertarget{class_board2_ab02675377010f5f137a5d34f013ffc42}{}\label{class_board2_ab02675377010f5f137a5d34f013ffc42}
+
+\begin{DoxyCompactList}\small\item\em lecture lie le fichier \end{DoxyCompactList}\item 
+\hyperlink{classmatrix}{matrix} $\ast$ \hyperlink{class_board2_ac7a6316973f7f62ed5ccdbff96d08fcc}{parser} (string s)
+\begin{DoxyCompactList}\small\item\em parser parse une string d\textquotesingle{}une liste de polyomino et le convertie en matrice \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_board2_a00b3c1b6fd5563515ca765a2ee84adc8}{board\+Height} =25\hypertarget{class_board2_a00b3c1b6fd5563515ca765a2ee84adc8}{}\label{class_board2_a00b3c1b6fd5563515ca765a2ee84adc8}
+
+\begin{DoxyCompactList}\small\item\em board\+Height hauteur \end{DoxyCompactList}\item 
+int \hyperlink{class_board2_a45133885f7bb6a1030eb123aa527f60a}{board\+Width} =25\hypertarget{class_board2_a45133885f7bb6a1030eb123aa527f60a}{}\label{class_board2_a45133885f7bb6a1030eb123aa527f60a}
+
+\begin{DoxyCompactList}\small\item\em board\+Width largeur \end{DoxyCompactList}\item 
+Q\+Basic\+Timer \hyperlink{class_board2_a84422a4e581b5cf43a1a2b695908f247}{timer}\hypertarget{class_board2_a84422a4e581b5cf43a1a2b695908f247}{}\label{class_board2_a84422a4e581b5cf43a1a2b695908f247}
+
+\begin{DoxyCompactList}\small\item\em timer timer \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classmatrix}{matrix} $\ast$ $>$ \hyperlink{class_board2_a99c1dbd2ea704a00fa6768ccf6ec164b}{v\+Board}\hypertarget{class_board2_a99c1dbd2ea704a00fa6768ccf6ec164b}{}\label{class_board2_a99c1dbd2ea704a00fa6768ccf6ec164b}
+
+\begin{DoxyCompactList}\small\item\em v\+Board liste des board chargé \end{DoxyCompactList}\item 
+int \hyperlink{class_board2_a5b8680681af9477caa2213968a109d6d}{time} =0\hypertarget{class_board2_a5b8680681af9477caa2213968a109d6d}{}\label{class_board2_a5b8680681af9477caa2213968a109d6d}
+
+\begin{DoxyCompactList}\small\item\em time temps \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_board2}{Board2} class dessine un polyomino à partir d\textquotesingle{}une liste de segments. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Board2@{Board2}!Board2@{Board2}}
+\index{Board2@{Board2}!Board2@{Board2}}
+\subsubsection[{\texorpdfstring{Board2(\+Q\+Widget $\ast$parent=0)}{Board2(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Board2\+::\+Board2 (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board2_aae64d4a675128c16c00d07149c1a4ee3}{}\label{class_board2_aae64d4a675128c16c00d07149c1a4ee3}
+
+
+\hyperlink{class_board2}{Board2} constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Board2@{Board2}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Board2@{Board2}}
+\subsubsection[{\texorpdfstring{paint\+Event(\+Q\+Paint\+Event $\ast$event)}{paintEvent(QPaintEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board2\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board2_a5457e120d690a6706c1e9f2949777721}{}\label{class_board2_a5457e120d690a6706c1e9f2949777721}
+
+
+paint\+Event dessine le polyiomino 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{Board2@{Board2}!parser@{parser}}
+\index{parser@{parser}!Board2@{Board2}}
+\subsubsection[{\texorpdfstring{parser(string s)}{parser(string s)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix} $\ast$ Board2\+::parser (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board2_ac7a6316973f7f62ed5ccdbff96d08fcc}{}\label{class_board2_ac7a6316973f7f62ed5ccdbff96d08fcc}
+
+
+parser parse une string d\textquotesingle{}une liste de polyomino et le convertie en matrice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Board2@{Board2}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Board2@{Board2}}
+\subsubsection[{\texorpdfstring{timer\+Event(\+Q\+Timer\+Event $\ast$event)}{timerEvent(QTimerEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board2\+::timer\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Timer\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board2_af4b54598413c7146ae1281ffb0da1002}{}\label{class_board2_af4b54598413c7146ae1281ffb0da1002}
+
+
+timer\+Event achange de polyomino toutes les 1 secondes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{board2_8h}{board2.\+h}\item 
+\hyperlink{board2_8cpp}{board2.\+cpp}\end{DoxyCompactItemize}
